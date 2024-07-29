@@ -1,0 +1,156 @@
+.well {
+    background: url('../images/Rectangle\ 77.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    font-family: roboto;
+}
+
+.class3 {
+    width: 50%;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-weight: 100;
+    padding-bottom: 60px;
+}
+
+.class3 h3 {
+    font-variant-caps: all-petite-caps;
+    font-weight: 300;
+    font-size: 25px;
+    color: white;
+}
+
+.class3 h2 {
+    margin-top: -20px;
+    color: white;
+    font-variant-caps: all-petite-caps;
+    font-weight: 300;
+    font-size: 80px;
+}
+
+.class3 h1 {
+    color: white;
+    font-size: 25px;
+    margin-top: -30px;
+    font-weight: 300;
+}
+
+.class3 button {
+    margin-top: 20px;
+    padding: 20px;
+    width: 26%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 6px;
+}
+
+.class4 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 20px;
+    font-variant-caps: all-petite-caps;
+    font-weight: 100;
+}
+
+.class4 p {
+    width: 90%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.546);
+}
+
+.class4 .ext {
+    width: 90%;
+    border-bottom: none;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    font-weight: 100;
+}
+
+.ext h3 {
+    font-weight: 100;
+}
+
+@media (max-width: 767px) {
+    .well {
+        flex-direction: column;
+        gap: 90px;
+    }
+
+    .class3 {
+        width: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        justify-content: flex-start;
+        margin-top: 40px;
+        /* Adjust as needed for spacing from the top */
+    }
+
+    .class3 h3 {
+        font-size: 20px;
+    }
+
+    .class3 h2 {
+        line-height: 30px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 40px;
+        /* Adjust as needed for better fit */
+    }
+
+    .class3 h1 {
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.643);
+        /* Adjust as needed for better fit */
+    }
+
+    .class3 button {
+        width: 60%;
+        padding: 15px;
+        font-size: 10px;
+
+        /* Adjust as needed for better fit */
+    }
+
+
+    .class4 {
+        width: 80%;
+        margin-top: 10px;
+        padding-left: 40px;
+    }
+
+    .class4 p {
+        width: 100%;
+        font-size: 20px;
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.546);
+        display: flex;
+        align-items: center;
+        margin: 3px;
+        /* Remove margin to eliminate space between elements */
+        padding-top: 15px;
+        padding-bottom: 10px;
+        /* Add some padding for better spacing */
+        /* background-color: red; */
+    }
+
+    .class4 .ext {
+        width: 100%;
+    }
+
+    .ext h3 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+
+}

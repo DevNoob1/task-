@@ -1,0 +1,162 @@
+.location {
+    height: 100vh;
+    font-family: roboto;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.place1,
+.place2 {
+    width: 45%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(230, 230, 230, 1);
+    border-right: none;
+}
+
+.place2 {
+    border-left: none;
+}
+
+.place1 img,
+.place2 img {
+    height: 100%;
+}
+
+
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name label {
+    font-size: 40px;
+}
+
+.name p {
+    font-size: 20px;
+}
+
+.name h3 {
+    font-weight: 100;
+    margin-top: 0px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.ser {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* padding: 20px; */
+
+    padding-left: 40px;
+    border: 1px rgba(230, 230, 230, 1) solid;
+    border-bottom: none;
+    border-top: none;
+    padding-top: 20px;
+    /* margin-right: 40px; */
+}
+
+.ser h2 {
+    font-size: 20px;
+    font-weight: 100px;
+    color: rgba(199, 157, 91, 1);
+}
+
+
+
+.ser li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+@media (max-width: 767px) {
+    .location {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        height: auto;
+        padding-top: 40px;
+
+    }
+
+    .place1,
+    .place2 {
+        width: 100%;
+        height: auto;
+        /* margin-bottom: 20px; */
+        padding-bottom: 20px;
+        /* Add some spacing between the sections */
+    }
+
+    .place1 img,
+    .place2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .details {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .name {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .name label {
+        font-size: 24px;
+        /* Adjust font size for mobile */
+    }
+
+    .name p,
+    .ser h2,
+    .ser li {
+        font-size: 14px;
+        /* Adjust font size for mobile */
+    }
+
+    .name h3 {
+        font-size: 12px;
+        /* Adjust font size for mobile */
+        /* margin-top: 10px; */
+    }
+
+    .ser {
+        width: 100%;
+        padding: 15px;
+        /* border-left: none;
+        border-right: none; */
+        /* border: none; */
+    }
+
+    .ser h2 {
+        /* margin-bottom: 10px; */
+    }
+
+    .ser li {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+    }
+}

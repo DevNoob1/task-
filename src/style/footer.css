@@ -1,0 +1,92 @@
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding-left: 60px;
+    font-family: roboto;
+    padding-top: 60px;
+    gap: 350px;
+}
+
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-column h4 {
+    color: #d4af37;
+    /* Golden color */
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Main CSS remains unchanged */
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        padding-left: 0px;
+        padding-top: 20px;
+        gap: 0;
+    }
+
+    .footer-column {
+        width: 100%;
+        /* margin-bottom: 20px; */
+    }
+
+    .footer-column h4 {
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    .footer-column ul li {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .footer-column ul {
+        display: none;
+    }
+
+    .footer-column.active ul {
+        display: block;
+    }
+}
+
+/* Toggle button style for mobile view */
+@media (max-width: 768px) {
+    .footer-column {
+        position: relative;
+        border-bottom: #d4af37 solid 1px;
+    }
+
+    .footer-column h4::after {
+        content: '🔻';
+        /* Outline downward arrow */
+        /* Downward arrow */
+        font-size: 14px;
+        margin-left: 10px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .footer-column.active h4::after {
+        content: '🔻';
+        /* Outline upward arrow */
+        /* Upward arrow */
+    }
+}

@@ -1,0 +1,29 @@
+.header {
+    height: 130vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.209), rgba(0, 0, 0, 0.073)), url('https://s3-alpha-sig.figma.com/img/9c13/29cb/ecb5f5233bb55fe64a5ccb51eb9e57ae?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ctyhg7Zcuj7p7NgkSipW-na84AjiG9N6Kph8JJD39Ui65p5awP7X4uWyJmZjHPTITkjFj0eCHQ8ujNg8rPc3DdPZ6lkCOHnQ7RB73jlcHjT2gRt4QpJHta3VPUucoGnlgbp89ASvfFpF6vlzEemF57kpkejx8dD5m1bg1louYq1jiSNJi9Q1NSPTIEw12TG-5NDSKW4OXB8zfXpX1ePK0zs34OKLfxSD79st6fekAjWfcFCvo0jH5id9hOQBKysaS6Kd8AkiUekTSLsOYq0EMWeulQurdvDJ46hJZlV6kiMoh2u2E0huM~HE--Eh46Zo82bkNIOUBTPrcnp1n~V9Lw__') no-repeat center center/cover;
+    background-size: cover;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .header {
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.209), rgba(0, 0, 0, 0.073)), url('https://s3-alpha-sig.figma.com/img/9c13/29cb/ecb5f5233bb55fe64a5ccb51eb9e57ae?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ctyhg7Zcuj7p7NgkSipW-na84AjiG9N6Kph8JJD39Ui65p5awP7X4uWyJmZjHPTITkjFj0eCHQ8ujNg8rPc3DdPZ6lkCOHnQ7RB73jlcHjT2gRt4QpJHta3VPUucoGnlgbp89ASvfFpF6vlzEemF57kpkejx8dD5m1bg1louYq1jiSNJi9Q1NSPTIEw12TG-5NDSKW4OXB8zfXpX1ePK0zs34OKLfxSD79st6fekAjWfcFCvo0jH5id9hOQBKysaS6Kd8AkiUekTSLsOYq0EMWeulQurdvDJ46hJZlV6kiMoh2u2E0huM~HE--Eh46Zo82bkNIOUBTPrcnp1n~V9Lw__') no-repeat center center/cover;
+        /* Adjust height for tablets and smaller desktops */
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 90vh;
+        /* Adjust height for tablets and large smartphones */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        background: linear-gradient(rgba(0, 0, 0, 0.209), rgba(0, 0, 0, 0.073)), url('https://s3-alpha-sig.figma.com/img/9c13/29cb/ecb5f5233bb55fe64a5ccb51eb9e57ae?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ctyhg7Zcuj7p7NgkSipW-na84AjiG9N6Kph8JJD39Ui65p5awP7X4uWyJmZjHPTITkjFj0eCHQ8ujNg8rPc3DdPZ6lkCOHnQ7RB73jlcHjT2gRt4QpJHta3VPUucoGnlgbp89ASvfFpF6vlzEemF57kpkejx8dD5m1bg1louYq1jiSNJi9Q1NSPTIEw12TG-5NDSKW4OXB8zfXpX1ePK0zs34OKLfxSD79st6fekAjWfcFCvo0jH5id9hOQBKysaS6Kd8AkiUekTSLsOYq0EMWeulQurdvDJ46hJZlV6kiMoh2u2E0huM~HE--Eh46Zo82bkNIOUBTPrcnp1n~V9Lw__') no-repeat center center/cover;
+        height: 80vh;
+        /* Adjust height for smaller smartphones */
+    }
+}

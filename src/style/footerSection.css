@@ -1,0 +1,235 @@
+.locations {
+    display: flex;
+    font-family: roboto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.272);
+    border-top: 1px solid rgba(255, 255, 255, 0.272);
+}
+
+.locationwork {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 50px;
+    /* margin-top: 30px; */
+    width: 50%;
+    border-right: 1px solid rgba(255, 255, 255, 0.318);
+}
+
+.location-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: transparent;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
+    padding-left: 50px;
+    width: 72%;
+
+    /* background-color: red; */
+}
+
+.location-details {
+    margin-right: 50px;
+}
+
+.location-details h4 {
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.location-details p {
+    font-weight: 300;
+    font-size: 17px;
+    color: #d4af37;
+    /* Golden color */
+}
+
+.location-hours h5 {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.location-hours p {
+    font-weight: 300;
+    font-size: 16px;
+
+    color: rgba(255, 255, 255, 0.63);
+}
+
+.newsletter-section {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 60px;
+    background-color: transparent;
+    /* Ensure the background is transparent */
+    width: 100%;
+    max-width: 400px;
+    /* Adjust width as needed */
+}
+
+.newsletter-section h4 {
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.newsletter-section p {
+    font-weight: 300;
+    font-size: 19px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.705);
+    line-height: 1.5;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.subscribe-button {
+    padding: 20px;
+    font-size: 14px;
+    background-color: transparent;
+    /* Transparent background */
+    color: white;
+    /* White text color */
+    border: 1px solid white;
+    /* White border */
+    cursor: pointer;
+}
+
+.last {
+    width: 18%;
+    height: 40vh;
+    padding-top: 60px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.last p {
+    color: white;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.last button {
+    padding: 15px;
+    width: 70%;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.last img {
+    position: absolute;
+    bottom: -40px;
+    height: 25vh;
+    right: 0px;
+    z-index: 0;
+    width: 15vh;
+}
+
+@media (max-width: 768px) {
+    .locations {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .locationwork {
+        width: 95%;
+        border: none;
+    }
+
+    .location-card {
+        padding-left: 15px;
+        width: 100%;
+        border: none;
+    }
+
+    .location-details h4 {
+        font-size: 20px;
+    }
+
+    .location-details p {
+        font-size: 12px;
+    }
+
+    .location-hours h5 {
+        font-size: 16px;
+    }
+
+    .location-hours p {
+        font-size: 12px;
+    }
+
+    .newsletter-section {
+        /* padding: 20px; */
+        max-width: 90%;
+        margin-left: -40px;
+        margin-top: -40px;
+        /* margin: 10px 0; */
+    }
+
+    .newsletter-section h4 {
+        font-size: 20px;
+    }
+
+    .newsletter-section p {
+        font-size: 14px;
+    }
+
+    .input-field {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .subscribe-button {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .last {
+        padding: 20px;
+        text-align: center;
+        width: 80%;
+        height: 25vh;
+
+    }
+
+    .last p {
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .last button {
+        font-size: 14px;
+        padding: 10px;
+        margin-left: 10px;
+    }
+
+    .last img {
+        height: 22vh;
+        width: 13vh;
+        bottom: -10px;
+    }
+}

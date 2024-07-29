@@ -1,42 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Profile from './component/profile';
-import Table from './component/table.js';
-import Inputs from './component/input.js';
-import Reminder from './component/reminder.js';
-import Over from './component/over';
-import Loading from './component/loading';
-import './App.css';
+import React from 'react'
+import Header from './Pages/header.js'
+import Middle from './Pages/middle.js'
+import Well from './Pages/well.js'
+import Location from './Pages/location.js'
+import Footer from './Pages/footer.js'
+import Footersection from './component/FooterSection.js'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
-function App() {
-  const [loading, setLoading] = useState(true);
+// import Sweat from './Pages/sweat.js'
+import './App.css'
 
-  useEffect(() => {
-    // Simulate loading delay (e.g., fetching data, initializing app)
-    const timeout = setTimeout(() => {
-      setLoading(false); // Set loading to false after delay (simulated)
-    }, 4010); // Adjust the delay time as needed
-
-    return () => clearTimeout(timeout);
-  }, []);
-
+const App = () => {
   return (
-    <Router>
-      {loading ? (
-        <Loading /> // Display loading component while loading is true
-      ) : (
-        <div className="app">
-          <Routes>
-            <Route path="/" element={<Over />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/table" element={<Table />} />
-            <Route path="/input" element={<Inputs />} />
-            <Route path="/reminder" element={<Reminder />} />
-          </Routes>
+    <div className='app'>
+      <Header />
+      <Middle />
+      <Well />
+      <Location />
+      <Footer />
+      <Footersection />
+      <div className="social-icons">
+        <div style={{ display: 'flex', gap: '20px' }}> <a href="#" className="icon">
+          <FontAwesomeIcon icon={faFacebookF} />
+        </a>
+          <a href="#" className="icon">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="#" className="icon">
+            <FontAwesomeIcon icon={faYoutube} />
+          </a></div>
+        <div style={{ display: 'flex', gap: '20px' }}>
+          <p> © Geosist 2023 |</p>
+          <p> Terms and Conditions </p>
+          <p> Privacy Policy </p>
         </div>
-      )}
-    </Router>
-  );
+      </div>
+    </div>
+  )
 }
 
-export default App;
+export default App

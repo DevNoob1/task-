@@ -1,0 +1,157 @@
+.middle {
+    background: url(../images//Rectangle\ 73.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    font-family: roboto;
+}
+
+.class1 {
+    width: 50%;
+    padding-left: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-weight: 100;
+    padding-bottom: 30px;
+
+}
+
+
+.class1 h3 {
+    font-variant-caps: all-petite-caps;
+    font-weight: 300;
+    font-size: 25px;
+    color: white;
+}
+
+.class1 h2 {
+    margin-top: -20px;
+    color: white;
+    font-variant-caps: all-petite-caps;
+    font-weight: 300;
+    font-size: 80px;
+
+}
+
+.class1 h1 {
+    color: white;
+    font-size: 25px;
+    margin-top: -30px;
+    font-weight: 300;
+}
+
+.class1 button {
+    margin-top: 20px;
+    padding: 20px;
+    width: 18%;
+    border-radius: 6px;
+}
+
+.class2 {
+    /* background-color: white; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* Add some padding for better spacing */
+}
+
+.card {
+    color: white;
+    border-bottom: 1px rgba(255, 255, 255, 0.377) solid;
+    border-left: 1px rgba(255, 255, 255, 0.377) solid;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: end;
+    letter-spacing: 2px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    /* Subtle shadow for depth */
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.649);
+
+    color: black;
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.card-desc {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .middle {
+        display: flex;
+        flex-direction: column;
+        background-position: left;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    .class1 {
+        padding-left: 10px;
+        width: 80%;
+
+    }
+
+    .class1 h3 {
+        font-size: 20px;
+    }
+
+    .class1 h2 {
+        font-size: 40px;
+    }
+
+    .class1 h1 {
+        color: rgba(255, 255, 255, 0.724);
+        font-size: 18px;
+    }
+
+    .class1 button {
+        width: 40%;
+        font-size: 11px;
+        font-weight: 300;
+        padding: 15px;
+
+    }
+
+
+    .class2 {
+        width: 100%;
+        margin-bottom: 53px;
+    }
+
+    .card {
+        width: 94.5%;
+        height: 50px;
+        padding: 10px;
+        /* margin: 5px 0; */
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.377);
+    }
+
+    .card-title {
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+        flex-grow: 1;
+    }
+
+    .card-desc,
+    .join {
+        display: none;
+    }
+}
