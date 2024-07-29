@@ -1,23 +1,28 @@
 .middle {
-    background: url(../images//Rectangle\ 73.png) no-repeat;
+    background: url(../images/Rectangle\ 73.png) no-repeat;
     height: 100vh;
     background-size: cover;
     display: flex;
     font-family: roboto;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .class1 {
     width: 50%;
     padding-left: 40px;
-
     display: flex;
     flex-direction: column;
     justify-content: end;
     font-weight: 100;
     padding-bottom: 30px;
-
 }
 
+.class1 h3,
+.class1 h2,
+.class1 h1 {
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
+}
 
 .class1 h3 {
     font-variant-caps: all-petite-caps;
@@ -32,7 +37,7 @@
     font-variant-caps: all-petite-caps;
     font-weight: 300;
     font-size: 80px;
-
+    animation-delay: 0.3s;
 }
 
 .class1 h1 {
@@ -40,6 +45,7 @@
     font-size: 25px;
     margin-top: -30px;
     font-weight: 300;
+    animation-delay: 0.6s;
 }
 
 .class1 button {
@@ -47,15 +53,23 @@
     padding: 20px;
     width: 18%;
     border-radius: 6px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out 1s forwards;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.class1 button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
 }
 
 .class2 {
-    /* background-color: white; */
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* Add some padding for better spacing */
 }
 
 .card {
@@ -69,13 +83,13 @@
     letter-spacing: 2px;
     padding-bottom: 40px;
     padding-left: 40px;
-    /* Subtle shadow for depth */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .card:hover {
     background-color: rgba(255, 255, 255, 0.649);
-
     color: black;
+    transform: scale(1.05);
 }
 
 .card-title {
@@ -90,6 +104,40 @@
     margin-bottom: 10px;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 @media (max-width: 767px) {
     .middle {
         display: flex;
@@ -102,7 +150,6 @@
     .class1 {
         padding-left: 10px;
         width: 80%;
-
     }
 
     .class1 h3 {
@@ -123,9 +170,7 @@
         font-size: 11px;
         font-weight: 300;
         padding: 15px;
-
     }
-
 
     .class2 {
         width: 100%;
@@ -136,7 +181,6 @@
         width: 94.5%;
         height: 50px;
         padding: 10px;
-        /* margin: 5px 0; */
         display: flex;
         justify-content: space-between;
         border: none;

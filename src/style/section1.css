@@ -7,8 +7,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     color: white;
+    animation: fadeIn 2s ease-in-out;
 }
 
 span {
@@ -17,6 +17,8 @@ span {
     font-weight: 400;
     line-height: 80px;
     letter-spacing: 0.2em;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
 }
 
 .section1 button {
@@ -24,39 +26,77 @@ span {
     padding: 15px;
     background-color: transparent;
     border: 1px white solid;
-
     color: white;
     font-size: 24px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out 0.5s forwards;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.section1 button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @media (max-width: 768px) {
     span {
         font-size: 8vw;
-
-        /* Increase font size on smaller screens */
     }
 
     .section1 {
-        /* margin-top: -100px; */
         padding-top: 300px;
     }
 
     .section1 button {
         width: 50%;
         font-size: 4vw;
-        /* Increase font size on smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     span {
         font-size: 10vw;
-        /* Further increase font size on very small screens */
     }
 
     .section1 button {
         width: 60%;
         font-size: 5vw;
-        /* Further increase font size on very small screens */
     }
 }

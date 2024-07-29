@@ -5,6 +5,7 @@
     height: 100vh;
     display: flex;
     font-family: roboto;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .class3 {
@@ -15,6 +16,13 @@
     justify-content: flex-end;
     font-weight: 100;
     padding-bottom: 60px;
+}
+
+.class3 h3,
+.class3 h2,
+.class3 h1 {
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
 }
 
 .class3 h3 {
@@ -30,6 +38,7 @@
     font-variant-caps: all-petite-caps;
     font-weight: 300;
     font-size: 80px;
+    animation-delay: 0.3s;
 }
 
 .class3 h1 {
@@ -37,6 +46,7 @@
     font-size: 25px;
     margin-top: -30px;
     font-weight: 300;
+    animation-delay: 0.6s;
 }
 
 .class3 button {
@@ -46,13 +56,23 @@
     font-weight: 400;
     letter-spacing: 1px;
     border-radius: 6px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out 1s forwards;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.class3 button:hover {
+    background-color: rgb(255, 196, 196);
+    color: black;
+    transform: scale(1.05);
 }
 
 .class4 {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     color: white;
     font-size: 25px;
     padding-bottom: 20px;
@@ -64,6 +84,12 @@
     width: 90%;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.546);
+    transition: color 0.3s, transform 0.3s;
+}
+
+.class4 p:hover {
+    color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
 }
 
 .class4 .ext {
@@ -77,6 +103,46 @@
 
 .ext h3 {
     font-weight: 100;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.ext h3:hover {
+    color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @media (max-width: 767px) {
@@ -92,7 +158,6 @@
         padding-bottom: 20px;
         justify-content: flex-start;
         margin-top: 40px;
-        /* Adjust as needed for spacing from the top */
     }
 
     .class3 h3 {
@@ -104,23 +169,18 @@
         margin-top: 20px;
         margin-bottom: 50px;
         font-size: 40px;
-        /* Adjust as needed for better fit */
     }
 
     .class3 h1 {
         font-size: 20px;
         color: rgba(255, 255, 255, 0.643);
-        /* Adjust as needed for better fit */
     }
 
     .class3 button {
         width: 60%;
         padding: 15px;
         font-size: 10px;
-
-        /* Adjust as needed for better fit */
     }
-
 
     .class4 {
         width: 80%;
@@ -136,11 +196,8 @@
         display: flex;
         align-items: center;
         margin: 3px;
-        /* Remove margin to eliminate space between elements */
         padding-top: 15px;
         padding-bottom: 10px;
-        /* Add some padding for better spacing */
-        /* background-color: red; */
     }
 
     .class4 .ext {
@@ -151,6 +208,4 @@
         font-size: 14px;
         margin-bottom: 5px;
     }
-
-
 }
